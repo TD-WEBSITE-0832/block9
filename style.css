@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(to left, black, white);
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    gap: 40px;
+}
+.card{
+    padding: 20px;
+    height: 120px;
+    width: 200px;
+    background: gray;
+    border-radius: 13px;
+     display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bt{
+    border: none;
+    padding: 10px;
+    width: 140px;
+    height: 35px;
+    background: red;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-left: 40px;
+}
