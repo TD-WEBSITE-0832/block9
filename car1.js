@@ -56,8 +56,13 @@ function changeTex(btn) {
     }
 }
 
+let age = Number(prompt("Hey, yoshing nechida?", ""));
 
-
+if (age >= 18) {
+    alert("Davom etgine");
+} else {
+    alert("To'xtaysanmi o‘zi");
+}
 
 
 
