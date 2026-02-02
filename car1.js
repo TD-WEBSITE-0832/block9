@@ -55,3 +55,13 @@ function changeTex(btn) {
         btn.innerText = "Loading...";
     }
 }
+
+
+
+
+
+
+
+
+
+
