@@ -116,4 +116,40 @@
       });
     });
 
-    // finish//
+    // finish//  
+
+
+
+
+
+    const btn = document.querySelector(".glow-btn");
+
+btn.addEventListener("mousemove", (e) => {
+  const rect = btn.getBoundingClientRect();
+  btn.style.setProperty("--x", `${e.clientX - rect.left}px`);
+  btn.style.setProperty("--y", `${e.clientY - rect.top}px`);
+});
+
+
+
+
+function changeText(btn) {
+    if (btn.innerText === "Loading...") {
+        btn.innerText = "Error...";
+    } else {
+        btn.innerText = "Loading...";
+    }
+}
+
+
+
+
+
+function goServer(btn) {
+  btn.innerText = "Loading...";
+  btn.disabled = true;
+
+  setTimeout(() => {
+    window.location.href = "car3.html"; // 2-server / sahifa
+  }, 2000); // 2 soniya loading
+}

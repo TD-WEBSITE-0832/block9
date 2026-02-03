@@ -151,3 +151,52 @@
       font-size: 0.95rem;
       color: #64748b;
     }
+
+
+
+
+
+    .glow-btn{
+  position: relative;
+  padding: 18px 60px;
+  border-radius: 40px;
+  border: none;
+  background: #0f0f1a;
+  color: #7a7cff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(122,124,255,0.2);
+}
+
+/* cursor joyidagi glow */
+.glow-btn::before{
+  content:"";
+  position:absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(122,124,255,0.6),
+    transparent 60%
+  );
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+/* hover bo‘lganda */
+.glow-btn:hover::before{
+  width: 300px;
+  height: 300px;
+}
+
+/* tashqi glow */
+.glow-btn:hover{
+  box-shadow:
+    0 0 20px rgba(122,124,255,0.4),
+    0 0 40px rgba(122,124,255,0.3);
+}

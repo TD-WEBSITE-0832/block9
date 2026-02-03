@@ -1,0 +1,54 @@
+body{
+    background-image: url("https://www.shutterstock.com/image-photo/amazing-dramatic-magenta-purple-sky-600nw-2684001087.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.block{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+    overflow: hidden;
+}
+
+/* harakat qiladigan qator */
+.track{
+    display: flex;
+    gap: 1em;
+    width: max-content;
+    animation: move 10s linear infinite;
+}
+
+.card1{
+    width: 5em;
+    height: 5em;
+    background: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+
+.bt{
+    padding: 10px;
+    width: 120px;
+    border: none;
+    background: black;
+    color: whitesmoke;
+    border-radius: 12px;
+    height: 50px;
+}
+/* ANIMATSIYA */
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
