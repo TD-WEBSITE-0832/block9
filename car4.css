@@ -1,0 +1,172 @@
+body {
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #020617;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+    transition: all 0.6s ease-in-out;
+}
+.calculator:hover{
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0px 0px 20px 6px #43da44;
+}
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #020617;
+  color: #38bdf8;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 55px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.number {
+  background: #1e293b;
+  color: #fff;
+    transition: all 0.6s ease-in-out;
+}
+.number:hover{
+    transition: all 0.6s ease-in-out;
+   color: #1e293b;
+   background: #fff;
+}
+
+.operator {
+  background: #38bdf8;
+  color: #020617;
+    transition: all 0.6s ease-in-out;
+}
+.operator:hover{
+    background: #020617;
+    color: #38bdf8;
+    transition: all 0.6s ease-in-out;
+}
+
+.equal {
+  background: #22c55e;
+  color: #020617;
+  grid-row: span 2;
+    transition: all 0.6s ease-in-out;
+}
+.equal:hover{
+    transition: all 0.6s ease-in-out;
+ color: #22c55e;
+ background: #051457;
+}
+
+.clear {
+  background: #ef4444;
+    transition: all 0.6s ease-in-out;
+  color: white;
+}
+.clear:hover{
+    transition: all 0.6s ease-in-out;
+    color: #ef4444;
+    background: white;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+
+.bt {
+      position: relative;             /* shine uchun muhim */
+      overflow: hidden;               /* shine tashqariga chiqmasligi uchun */
+      padding: 16px 48px;             /* ichki bo‘sh joy */
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #6366f1, #a855f7);  /* chiroyli gradient */
+      border: none;
+      border-radius: 999px;           /* to‘liq oval/pill shakli */
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+      transition: all 0.4s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .bt:hover {
+      transform: translateY(-4px);    /* ozgina ko‘tarilish */
+      box-shadow: 0 15px 35px rgba(99, 102, 241, 0.6);
+    }
+
+    /* Shine effekti (yorqin chiziq) */
+    .bt::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;                    /* boshida chapda tashqarida */
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+      );
+      transform: skewX(-25deg);       /* diagonal yorqinlik uchun */
+      transition: left 0.7s ease;     /* siljish tezligi */
+    }
+
+    .bt:hover::before {
+      left: 150%;                     /* o‘ngga to‘liq o‘tib ketadi */
+    }
+
+    /* Qo‘shimcha ichki matn effekti (ixtiyoriy) */
+    .top {
+      position: relative;
+      z-index: 2;                     /* matn shine ustida turishi uchun */
+    }
+
+
+
+
+
+
+
+
+
+.bt{
+    position: relative;
+}
